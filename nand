@@ -1,0 +1,8 @@
+entity nand3 is 
+port(h,i,j:in bit;
+k:out bit);
+end nand3;
+architecture nandh of nand3 is
+ begin
+k <=NOT ( h and i and j) after 5 ns;
+end nandh;
