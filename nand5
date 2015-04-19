@@ -1,0 +1,8 @@
+entity nand5 is 
+port(l,m,n,o,p:in bit;
+q:out bit);
+end nand5;
+architecture nandl of nand5 is
+ begin
+q <=NOT( l and m and n and o and p ) after 5 ns; 
+end nandl;
